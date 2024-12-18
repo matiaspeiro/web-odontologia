@@ -153,40 +153,52 @@
         <form class="formulario">
 
             <fieldset>
-                <legend>Contactanos llenando todos los campos</legend>
-
-
+                <legend>Contáctanos llenando todos los campos</legend>
+        
                 <div class="contenedor-campos">
                     <div class="campo">
-                        <label> Nombre:</label>
-                        <input class="plin" type="text" placeholder="Tu Nombre">
+                        <label>Nombre:</label>
+                        <input class="plin" type="text" placeholder="Tu Nombre" required>
                     </div>
-
+        
                     <div class="campo">
-                        <label>Telefono;</label>
-                        <input class="plin" type="tel" placeholder="Tu telefono">
+                        <label>Teléfono:</label>
+                        <input class="plin" type="tel" placeholder="Tu teléfono" required>
                     </div>
-
+        
                     <div class="campo">
-                        <label>Correo electronico:</label>
-                        <input class="plin" type="email" placeholder="Tu correo electronico">
+                        <label>Correo electrónico:</label>
+                        <input class="plin" type="email" placeholder="Tu correo electrónico" required>
                     </div>
-
+        
                     <div class="campo">
-                        <label>¿Que servicio necesitas?</label>
-                        <textarea></textarea>
+                        <label>¿Qué servicio necesitas?</label>
+                        <select class="plin" required>
+                            <option value="">Selecciona un servicio</option>
+                            <option value="limpieza">Limpieza dental</option>
+                            <option value="ortodoncia">Ortodoncia</option>
+                            <option value="blanqueamiento">Blanqueamiento dental</option>
+                            <option value="extraccion">Extracción de muela</option>
+                        </select>
                     </div>
-
+        
+                    <div class="campo">
+                        <label>Elige un día:</label>
+                        <input class="plin" type="date" required>
+                    </div>
+        
+                    <div class="campo">
+                        <label>Elige una hora:</label>
+                        <input class="plin" type="time" required>
+                    </div>
                 </div>
-
-
+        
                 <div class="alinear-derecha flex">
-                    <input class="boton w-100"  type="submit" value="Enviar">
+                    <input class="boton w-100" type="submit" value="Enviar">
                 </div>
-
-
+            </fieldset>
         </form>
-
+        
 
     </main>
 
