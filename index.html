@@ -28,8 +28,8 @@
 
             <a href="#">Nosotros</a>
             <a href="#">Servicios</a>
-            <a href="#">Clientes</a>
-            <a href="#">Contactos</a>
+            <a href="#">Obras sociales </a>
+            <a href="#">Contacto</a>
         </nav>
     </div>
 
@@ -47,7 +47,7 @@
                     </svg>
                     San Miguel de Tucumán, Tucumán.</p>
             </div>
-            <a href="#" class="boton">Contactar</a>
+            <a href="wasa" class="boton">Contactar</a>
         </div>
     </section>
 
@@ -65,7 +65,7 @@
                 <h3>Estetica dental</h3>
                 <p>
                 <div class="icono">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    <svg xmlns="http://www.w3.org/2000/svg" width="74" height="74" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="icon icon-tabler icons-tabler-outline icon-tabler-dental">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -88,7 +88,7 @@
                 <h3>Implantes dentales</h3>
                 <p>
                 <div class="icono">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    <svg xmlns="http://www.w3.org/2000/svg" width="74" height="74" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="icon icon-tabler icons-tabler-outline icon-tabler-clipboard-heart">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -109,19 +109,19 @@
             </section>
 
             <section class="servicios2">
-                <h3>Radiografías y Diagnóstico por Imagen:</h3>
+                <h3>Radiografías y Diagnóstico</h3>
                 <p>
                 <div class="icono">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    <svg xmlns="http://www.w3.org/2000/svg" width="74" height="74" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="icon icon-tabler icons-tabler-outline icon-tabler-camera-bolt">
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-stethoscope">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path
-                            d="M13 20h-8a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v3.5" />
-                        <path d="M9 13a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
-                        <path d="M19 16l-2 3h4l-2 3" />
+                        <path d="M6 4h-1a2 2 0 0 0 -2 2v3.5h0a5.5 5.5 0 0 0 11 0v-3.5a2 2 0 0 0 -2 -2h-1" />
+                        <path d="M8 15a6 6 0 1 0 12 0v-3" />
+                        <path d="M11 3v2" />
+                        <path d="M6 3v2" />
+                        <path d="M20 10m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
                     </svg>
-
                 </div>
 
                 </p>
@@ -150,30 +150,29 @@
             <h2 class="titulo">Contacto</h2>
         </section>
 
-        <form class="formulario">
-
+        <form class="formulario" class="wasa" action="procesar_formulario.php" method="POST">
             <fieldset>
                 <legend>Contáctanos llenando todos los campos</legend>
-        
+
                 <div class="contenedor-campos">
                     <div class="campo">
                         <label>Nombre:</label>
-                        <input class="plin" type="text" placeholder="Tu Nombre" required>
+                        <input class="plin" type="text" name="nombre" placeholder="Tu Nombre" required>
                     </div>
-        
+
                     <div class="campo">
                         <label>Teléfono:</label>
-                        <input class="plin" type="tel" placeholder="Tu teléfono" required>
+                        <input class="plin" type="tel" name="telefono" placeholder="Tu teléfono" required>
                     </div>
-        
+
                     <div class="campo">
                         <label>Correo electrónico:</label>
-                        <input class="plin" type="email" placeholder="Tu correo electrónico" required>
+                        <input class="plin" type="email" name="correo" placeholder="Tu correo electrónico" required>
                     </div>
-        
+
                     <div class="campo">
                         <label>¿Qué servicio necesitas?</label>
-                        <select class="plin" required>
+                        <select class="plin" name="servicio" required>
                             <option value="">Selecciona un servicio</option>
                             <option value="limpieza">Limpieza dental</option>
                             <option value="ortodoncia">Ortodoncia</option>
@@ -181,24 +180,25 @@
                             <option value="extraccion">Extracción de muela</option>
                         </select>
                     </div>
-        
+
                     <div class="campo">
                         <label>Elige un día:</label>
-                        <input class="plin" type="date" required>
+                        <input class="plin" type="date" name="fecha" required>
                     </div>
-        
+
                     <div class="campo">
                         <label>Elige una hora:</label>
-                        <input class="plin" type="time" required>
+                        <input class="plin" type="time" name="hora" required>
                     </div>
                 </div>
-        
+
                 <div class="alinear-derecha flex">
                     <input class="boton w-100" type="submit" value="Enviar">
                 </div>
             </fieldset>
         </form>
-        
+
+
 
     </main>
 
@@ -207,8 +207,57 @@
     </fieldset>
 
     <footer class="footer">
-        Todos los derechos reservados
+        <ul class="social-icon">
+            <li class="icon-elem">
+                <a href="" class="icon">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </li>
+            <li class="icon-elem">
+                <a href="https://www.instagram.com/villa.real.salud.odonto?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    class="icon">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </li>
+            <li class="icon-elem">
+                <a href="https://api.whatsapp.com/send/?phone=543816728511&text&type=phone_number&app_absent=0"
+                    class="icon">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+            </li>
+            <li class="icon-elem">
+                <a href="" class="icon">
+                    <ion-icon name="mail-outline"></ion-icon>
+                </a>
+            </li>
+        </ul>
+        <ul class="menu">
+            <li class="menu-elem">
+                <a href="" class="menu-icon">
+                    Inicio
+                </a>
+            </li>
+            <li class="menu-elem">
+                <a href="" class="menu-icon">
+                    Contacto
+                </a>
+            </li>
+            <li class="menu-elem">
+                <a href="" class="menu-icon">
+                    Obras sociales
+                </a>
+            </li>
+            <li class="menu-elem">
+                <a href="" class="menu-icon">
+                    Servicios
+                </a>
+            </li>
+        </ul>
+        <p class="text">2025 | Todos los derechos reservados </p>
     </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </body>
 
